@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: SabbathBlack OT Heavy;
+  padding: 10px;
+  background: #f1f1f1;
+}
+ p {
+  font-size: 15px;
+ }
+
+ #wrapper {
+
+  width: 90%; 
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  /*box-shadow: 3px 3px 3px 3px #808080;*/
+}
+
+/* Style the header */
+.header {
+  background-color: #A2A2A2;
+  padding: 30px;
+  text-align: center;
+  font-family: SabbathBlack OT Heavy;
+}
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #A2A2A2;
+}
+
+/* Style the topnav links * THE LOWER BAR/
+.topnav a {
+  float: left;
+  display: block;
+  color: #A2A2A2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #333;
+  color: black;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 95%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+}
+.media {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content p{
+  text-align: left;
+  font-family: Minion Variable Concept;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="header">
+  <h1>Lisa Duong</h1>
+  <h3>My Virtual Gallery</h3>
+</div>
+
+<div class="topnav">
+  <a href="gallery.html">Gallery</a>
+  <a href="artiststatement.html">Artist Statement</a>
+  <a href="contact.html">Contact</a>
+  <a href="index.html" style="float:right">Home</a>
+</div>
+
+<div id="wrapper">
+
+<div class="row">
+
+  <div class="column">
+    <div class="media">
+      <img src="lisaduong_d3.jpg"/>
+    </div>
+    <div class="content">
+    <h2>Logo Design . Illustrator</h2>
+    <p>This was an assignment from my graphic design basics class. It was extremly statisfying to think I created all of this with simple Illustrator.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="media">
+      <img src="lisaduong_t2.jpg"/>
+    </div>
+    <div class="content">
+    <h2>The History of Type . Illustrator</h2>
+    <p>Typography was one of my favorites classes to attend. I had the ability to express my creativity through assignments like this, and learned how type has a huge impact in design.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="media">
+      <img src="lisaduong_t3.jpg"/>
+    </div>
+    <div class="content">
+    <h2>Kyoto . Illustrator</h2>
+    <p>I was assigned to create a design book for the city of Kyoto in Japan. Incorporating typography and design, I'm satisfied with the clean and easily-navigated outcome.</p>
+    </div>
+  </div>
+  
+</div>
+
+  </div>
+</body>
+</html>

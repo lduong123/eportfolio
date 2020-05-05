@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+
+  <head>
+    <meta name="viewport" charset="utf-8">
+    <title>My Gallery</title>
+     <a href="index.html" style="float:right">Home</a>
+      
+<!--Internal Style Sheet -->
+<style>
+
+body {
+  height: 80vh;
+  align-items: center;
+  background: #E0E0E0;
+  overflow: hidden;
+  justify-content: center;
+  /*display properties details*/
+  /* https://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=flex*/
+  display: flex; /*Displays an element as a block-level flex container */
+  flex-direction: column; 
+}
+
+h1 {
+  font-family: 'SabbathBlack OT Heavy', SabbathBlack OT Heavy;
+  font-size: 22px;
+  color: #151E3F;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.media {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
+  letter-spacing:1px;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<h1>Gallery</h1>
+  <div class="wrapper">
+
+    <div class="media">
+      <div class="layer">
+          <a href="codee.html">Code</a>
+      </div>
+      <img src="code1.jpg" alt="" />
+    </div>
+
+    <div class="media">
+      <div class="layer">
+          <a href="hyperreal.html">Hyper Reality</a>
+      </div>
+      <img src="hyper.jpg" alt="" />
+    </div>
+
+    <div class="media">
+      <div class="layer">
+          <a href="design.html">Design</a>
+      </div>
+      <img src="lisaduong_d2.jpg"  alt="" />
+    </div>
+
+    <div class="media">
+      <div class="layer">
+          <a href="glitch.html">Glitch</a>
+      </div>
+      <img src="lisaduong_glitch1.jpg"  alt="" />
+    </div>
+
+    <div class="media">
+      <div class="layer">
+          <a href="photo.html">Photography</a>
+      </div>
+      <img src="lisaduong_photo3.jpg"  alt="" />
+    </div>
+
+  </div>
+
+</body>
+</html>
